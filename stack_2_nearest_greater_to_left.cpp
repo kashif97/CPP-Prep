@@ -18,7 +18,6 @@ int main(){
     for(int j=0; j<n; j++){
         if(st.size()==0){
             vec.push_back(-1);
-            st.push(arr[j]);
         }
         else if(st.size()>0 && arr[j] < st.top()){
             vec.push_back(st.top());
@@ -29,13 +28,12 @@ int main(){
             }
             if(st.size()==0){
                 vec.push_back(-1);
-                st.push(arr[j]);
             }
             else{
                 vec.push_back(st.top());
-                st.push(arr[j]);
             }
         }
+        st.push(arr[j]);
     }
     for(auto it: vec){
         cout<<it<<" ";
