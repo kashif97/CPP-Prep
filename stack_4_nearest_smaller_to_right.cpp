@@ -12,7 +12,7 @@ public:
         stack<long long> st;
         vector<long long> result(n);
         for(int i = n - 1; i >= 0; i--) {
-            while(!st.empty() && arr[i] >= st.top()) {
+            while(!st.empty() && arr[i] <= st.top()) {
                 st.pop();
             }
             if(st.empty()) {
