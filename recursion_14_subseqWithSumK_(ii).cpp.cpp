@@ -1,3 +1,5 @@
+//printing only one subsequence 
+//recursion pattern
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
