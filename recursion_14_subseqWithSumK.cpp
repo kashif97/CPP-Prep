@@ -34,10 +34,6 @@ int main(){
     cin>>sum;
     vector<int> ans;
     printSubseq(0, ans, 0, sum, arr, n);
-    for(auto itr: ans){
-        cout<<itr<<" ";
-    }
-    cout<<endl;
     return 0;
 
 }
